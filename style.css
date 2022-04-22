@@ -1,0 +1,273 @@
+:root{
+    --primary-color:#143F6B;
+    --second-color:#F55353;
+    --third-color:#FEB139;
+    --fourth-color:#F6F54D;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--second-color);
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+    z-index: 10;
+}
+
+#nav-bar ul{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 50px;
+}
+
+#contact{
+    height: 100vh;
+    background: var(--third-color);
+}
+
+#nav-bar li{
+    list-style: none;
+    font-size: 26px;
+    padding: 5px 0;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--fourth-color);
+}
+
+#welcome-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: var(--primary-color);
+    color: var(--fourth-color);
+}    
+
+.title{
+    margin: 90px 0;
+    font-size: 63px;
+    text-decoration: underline;
+}
+
+#welcome-section p{
+    width: 50%;
+    margin: 40px auto;
+    font-size: 26px;
+    opacity: 0.9;
+}
+
+#projects{
+    height: 100vh;
+    padding-top: 60px;
+    background: linear-gradient(180deg,var(--primary-color),var(--third-color) );
+    /* color: var(--primary-color); */
+    color: var(--fourth-color);
+}
+
+#projects h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.container-projects{
+    width: 80%;
+    height: auto;
+    background: black;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(320px , 1fr));
+    gap: 2rem;
+    padding: 20px;
+}
+
+.proyect-link {
+    border: 2px solid var(--fourth-color);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--fourth-color);
+    
+}
+
+.project-img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-title{
+    text-align: center;
+    font-size: 20px;
+}
+
+#contact{
+    display: flex;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+#contact div{
+    margin: 0 auto;
+    height: auto;
+}
+
+.title-contact{
+    text-align: center;
+    font-size: 60px;
+    color: var(--primary-color);
+    padding-top: 80px;
+}
+
+.description-contact{
+    text-align: center;
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-top: 100px;
+}
+
+#contact ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.contact-link{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.text-link{
+    margin-left: 10px;
+}
+
+footer{
+    background: var(--third-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid var(--primary-color);
+    height: 100px;
+    font-size: 14px;
+}
+
+@media(max-width:860px){
+    #nav-bar ul {
+        width: 100%;
+        justify-content: space-between;
+    }
+    #projects{
+        height: auto;
+    }
+}
+
+@media(max-width:500px){
+  
+    #nav-bar{
+        height: 71px;
+    }
+
+    #nav-bar ul{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-link{
+        font-size: 22px;
+    }
+
+    .title{
+        font-size: 2.4rem;
+        width: 90%;
+        margin: 100px auto;
+    }
+
+    #welcome-section p {
+        width: 80%;
+        font-size: 1.4rem;
+    }
+
+    #projects h2{
+        font-size: 1.8rem;
+        width: 90%;
+        margin: 10px auto 50px;
+    }
+
+    #projects{
+        height: auto;
+    }
+
+    .container-projects{
+        display: inline-grid;
+        background: transparent;
+        padding: 0;
+        width: 100%;
+    }
+  
+    .proyect-link {
+        border: 2px solid black;
+        color: var(--primary-color);
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .project-img{
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .project-title{
+        font-size: 24px;
+    }
+
+    .title-contact{
+        font-size: 1.9rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .description-contact{
+        width: 80%;
+        margin: 60px auto;
+        font-size: 1.4rem; 
+    }
+
+    #contact ul{
+        padding: 0 14px;
+        display: block;
+        margin: 0;
+    }
+
+    .contact-link{
+        justify-content: center;
+    }
+
+    .text-link{
+        margin-left: 2px;
+        margin-right: 10px;
+    }
+
+    footer{
+        font-size: 0.6rem;
+    }
+    
+}
+
+
